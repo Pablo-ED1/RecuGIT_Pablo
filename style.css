@@ -1,0 +1,89 @@
+*{
+   box-sizing: border-box;
+   
+}
+
+body{
+    background-color: #fdfdfd;
+    height: 100%;
+    margin:0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header{
+    background-color: #154734 !important;
+    display: flex;
+    justify-content: center;
+    color: #fdfdfd;
+   
+    padding: 20px;
+    height: 175px;
+}
+
+.header img{
+    
+  height: auto;
+  
+  
+}
+
+.header h1{
+    padding: 25px;
+    border: 0;
+    margin: 0;
+    align-self: center;
+ 
+
+}
+
+.column {
+    float: left;
+    min-height: 600px;
+}
+
+.column.side {
+    width: 20%;
+    overflow: hidden;
+    background-color: #027626;
+}
+
+.column.middle {
+    width: 80%;
+    padding: 10px;
+}
+
+.column.side a{
+    
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 18px;
+}
+
+.column.side a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
