@@ -32,6 +32,7 @@ public class Calculadora {
         System.out.println("Elije una opción correcta");
       }
       
+      // Comento esta línea para modificar el código porque ya había creado todas las operaciones
       
     } catch (NumberFormatException e) {
       System.out.println("Error. Introduce un número");
